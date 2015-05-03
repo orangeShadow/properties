@@ -4,8 +4,8 @@
 * Шаг 1: Подключаем сервис провайдер app/config/app.php
 ` 'orangeShadow\properties\PropertiesServiceProvider' `
 
-* Шаг 2: Прогружаем миграции:
-
+* Шаг 2: Прогружаем миграции: 
+` php artisan vendor:publish `, `php artisan migrate`
 
 * Шаг 3: Создаем, (предполагается, что модель Page у нас есть)
 ```
