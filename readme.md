@@ -1,53 +1,47 @@
-{\rtf1\ansi\ansicpg1251\cocoartf1347\cocoasubrtf570
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww22120\viewh14460\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+# CustomModelProperties
+[RU]
+#Пакет для добавления произвольным моделям, произвольных свойств с Валидацией
 
-\f0\fs24 \cf0 # CustomModelProperties\
-[RU]\
-#\uc0\u1055 \u1072 \u1082 \u1077 \u1090  \u1076 \u1083 \u1103  \u1076 \u1086 \u1073 \u1072 \u1074 \u1083 \u1077 \u1085 \u1080 \u1103  \u1087 \u1088 \u1086 \u1080 \u1079 \u1074 \u1086 \u1083 \u1100 \u1085 \u1099 \u1084  \u1084 \u1086 \u1076 \u1077 \u1083 \u1103 \u1084 , \u1087 \u1088 \u1086 \u1080 \u1079 \u1074 \u1086 \u1083 \u1100 \u1085 \u1099 \u1093  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074  \u1089  \u1042 \u1072 \u1083 \u1080 \u1076 \u1072 \u1094 \u1080 \u1077 \u1081 \
-\
-\uc0\u1055 \u1088 \u1080 \u1084 \u1077 \u1088  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1086 \u1090 \u1074 \u1072 \u1085 \u1080 \u1103 :\
-*\uc0\u1064 \u1072 \u1075  1: \u1057 \u1086 \u1079 \u1076 \u1072 \u1077 \u1084 , (\u1087 \u1088 \u1077 \u1076 \u1087 \u1086 \u1083 \u1072 \u1075 \u1072 \u1077 \u1090 \u1089 \u1103 , \u1095 \u1090 \u1086  \u1084 \u1086 \u1076 \u1077 \u1083 \u1100  Page \u1091  \u1085 \u1072 \u1089  \u1077 \u1089 \u1090 \u1100 )\
-```$property = melyfaro\\CustomModelProperties\\Model\\Property::create(\
-				[\
-					"model"=>"Page",\
-					"code"=>"VIEWS",\
-					"title"=>"\uc0\u1050 \u1086 \u1083 -\u1074 \u1086  \u1087 \u1088 \u1086 \u1089 \u1084 \u1086 \u1090 \u1088 \u1086 \u1074 ",\
-					"description"=>"\uc0\u1057 \u1095 \u1077 \u1090 \u1095 \u1080 \u1082  \u1087 \u1088 \u1086 \u1089 \u1084 \u1086 \u1090 \u1088 \u1072  \u1089 \u1090 \u1088 \u1072 \u1085 \u1080 \u1094 \u1099 ",\
-					"type"=>"numeric",\
-					"sort"=>"1",\
-					"multiple"=>false,\
-					"required"=>true\
-				]\
-		);\
-```\
-*\uc0\u1064 \u1072 \u1075  2: \u1044 \u1086 \u1073 \u1072 \u1074 \u1103 \u1083 \u1077 \u1084  \u1082  \u1052 \u1086 \u1076 \u1077 \u1083 \u1077  Page Trait\
-`use \\melyfaro\\CustomModelProperties\\TraitProperty;`\
-\
-*\uc0\u1064 \u1072 \u1075 3: \u1052 \u1086 \u1078 \u1077 \u1084  \u1079 \u1072 \u1076 \u1072 \u1090 \u1100  \u1087 \u1086  \u1082 \u1086 \u1076 \u1091  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1086  \u1080 \u1083 \u1080  \u1087 \u1086 \u1083 \u1091 \u1095 \u1080 \u1090 \u1100  \u1077 \u1075 \u1086  \
-```\
-$page = App\\Page::find(1);\
-//\uc0\u1047 \u1072 \u1076 \u1072 \u1090 \u1100  \u1079 \u1085 \u1072 \u1095 \u1077 \u1085 \u1080 \u1077  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1072  \u1087 \u1086  \u1082 \u1086 \u1076 \u1091  \
-$page->setPropertyValueByCode('VIEWS',1);\
-//\uc0\u1055 \u1086 \u1083 \u1091 \u1095 \u1080 \u1090 \u1100  \u1079 \u1085 \u1072 \u1095 \u1077 \u1085 \u1080 \u1077  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074 \u1072  \u1087 \u1086  \u1082 \u1086 \u1076 \u1091 \
-$page->getPropertyValueByCode('VIEWS');\
-```\
-\
-##\uc0\u1042 \u1089 \u1087 \u1086 \u1084 \u1086 \u1075 \u1072 \u1090 \u1077 \u1083 \u1100 \u1085 \u1099 \u1077  \u1084 \u1077 \u1090 \u1086 \u1076 \u1099  TraitProperty:\
->\uc0\u1055 \u1086 \u1083 \u1091 \u1095 \u1080 \u1090 \u1100  \u1074 \u1077 \u1089 \u1100  \u1089 \u1087 \u1080 \u1089 \u1086 \u1082  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074  \u1090 \u1077 \u1082 \u1091 \u1097 \u1077 \u1081  \u1084 \u1086 \u1076 \u1077 \u1083 \u1080 \
-`getProperties()`\
-\
->\uc0\u1055 \u1086 \u1083 \u1091 \u1095 \u1080 \u1090 \u1100  \u1074 \u1077 \u1089 \u1100  \u1089 \u1087 \u1080 \u1089 \u1086 \u1082  \u1079 \u1085 \u1072 \u1095 \u1077 \u1085 \u1080 \u1081  \u1089 \u1074 \u1086 \u1081 \u1089 \u1090 \u1074  \u1090 \u1077 \u1082 \u1091 \u1097 \u1077 \u1081  \u1084 \u1086 \u1076 \u1077 \u1083 \u1080 \
-`getPropertiesValue`\
-\
-\uc0\u1045 \u1089 \u1083 \u1080  \u1085 \u1072 \u1089 \u1083 \u1077 \u1076 \u1086 \u1074 \u1072 \u1090 \u1100 \u1089 \u1103  \u1086 \u1090  melyfaro\\CustomModelProperties\\Http\\Requests \
-```\
-public function rules()\
-\{\
-  $rules = parent::relus();\
-  $rules+=[\uc0\u1089 \u1074 \u1086 \u1080  \u1087 \u1088 \u1072 \u1074 \u1080 \u1083 \u1072 ];\
-\}\
-```\
-\uc0\u1087 \u1086 \u1083 \u1091 \u1095 \u1080 \u1084  \u1074 \u1072 \u1083 \u1080 \u1076 \u1072 \u1094 \u1080 \u1102  \u1087 \u1086  \u1087 \u1072 \u1088 \u1072 \u1084 \u1077 \u1090 \u1088 \u1072 \u1084  properties.code}
+Пример использотвания:
+*Шаг 1: Создаем, (предполагается, что модель Page у нас есть)
+```$property = melyfaro\CustomModelProperties\Model\Property::create(
+				[
+					"model"=>"Page",
+					"code"=>"VIEWS",
+					"title"=>"Кол-во просмотров",
+					"description"=>"Счетчик просмотра страницы",
+					"type"=>"numeric",
+					"sort"=>"1",
+					"multiple"=>false,
+					"required"=>true
+				]
+		);
+```
+*Шаг 2: Добавялем к Моделе Page Trait
+`use \melyfaro\CustomModelProperties\TraitProperty;`
+
+*Шаг3: Можем задать по коду свойство или получить его 
+```
+$page = App\Page::find(1);
+//Задать значение свойства по коду 
+$page->setPropertyValueByCode('VIEWS',1);
+//Получить значение свойства по коду
+$page->getPropertyValueByCode('VIEWS');
+```
+
+##Вспомогательные методы TraitProperty:
+>Получить весь список свойств текущей модели
+`getProperties()`
+
+>Получить весь список значений свойств текущей модели
+`getPropertiesValue`
+
+Если наследоваться от melyfaro\CustomModelProperties\Http\Requests 
+```
+public function rules()
+{
+  $rules = parent::relus();
+  $rules+=[свои правила];
+}
+```
+получим валидацию по параметрам properties.code
