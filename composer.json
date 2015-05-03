@@ -1,0 +1,21 @@
+{
+    "name": "orangeShadow/properties",
+    "description": "Typed properties from any Model in Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexeev Anton",
+            "email": "alexeev.sker@gmail.com"
+        }
+    ],
+    "minimum-stability": "master-dev",
+    "require": {
+      "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "orangeShadow\\properties\\": "src/"
+        }
+    }
+}
+}
