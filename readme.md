@@ -1,8 +1,13 @@
 [RU]
 #Пакет для добавления произвольным моделям, произвольных свойств с Валидацией
 
-Пример использотвания:
-*Шаг 1: Создаем, (предполагается, что модель Page у нас есть)
+* Шаг 1: Подключаем сервис провайдер app/config/app.php
+` 'orangeShadow\properties\PropertiesServiceProvider' `
+
+* Шаг 2: Прогружаем миграции:
+
+
+* Шаг 3: Создаем, (предполагается, что модель Page у нас есть)
 ```
 $property = melyfaro\CustomModelProperties\Model\Property::create(
 				[
@@ -17,10 +22,10 @@ $property = melyfaro\CustomModelProperties\Model\Property::create(
 				]
 		);
 ```
-*Шаг 2: Добавялем к Моделе Page Trait
+* Шаг 4: Добавялем к Моделе Page Trait
 `use \melyfaro\CustomModelProperties\TraitProperty;`
 
-*Шаг3: Можем задать по коду свойство или получить его 
+* Шаг 5: Можем задать по коду свойство или получить его 
 ```
 $page = App\Page::find(1);
 //Задать значение свойства по коду 
@@ -28,6 +33,7 @@ $page->setPropertyValueByCode('VIEWS',1);
 //Получить значение свойства по коду
 $page->getPropertyValueByCode('VIEWS');
 ```
+
 
 ##Вспомогательные методы TraitProperty:
 >Получить весь список свойств текущей модели

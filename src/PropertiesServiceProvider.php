@@ -13,7 +13,9 @@ class PropertiesServiceProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
-
+		$this->publishes([
+    			realpath(__DIR__.'/database/migrations') => $this->app->databasePath().'/migrations',
+    		]);
 	}
 
 
