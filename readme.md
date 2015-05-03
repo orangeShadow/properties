@@ -1,10 +1,10 @@
-# CustomModelProperties
 [RU]
 #Пакет для добавления произвольным моделям, произвольных свойств с Валидацией
 
 Пример использотвания:
 *Шаг 1: Создаем, (предполагается, что модель Page у нас есть)
-```$property = melyfaro\CustomModelProperties\Model\Property::create(
+```
+$property = melyfaro\CustomModelProperties\Model\Property::create(
 				[
 					"model"=>"Page",
 					"code"=>"VIEWS",
