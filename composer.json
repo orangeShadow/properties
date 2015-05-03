@@ -9,7 +9,7 @@
             "email": "alexeev.sker@gmail.com"
         }
     ],
-    "minimum-stability": "master-dev",
+    "minimum-stability": "dev",
     "require": {
       "php": ">=5.4.0"
     },
