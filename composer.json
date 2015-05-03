@@ -1,6 +1,7 @@
 {
     "name": "orange-shadow/properties",
     "description": "Typed properties from any Model in Laravel",
+    "keywords": ["laravel","laravel5"],
     "license": "MIT",
     "authors": [
         {
