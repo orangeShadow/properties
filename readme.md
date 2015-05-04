@@ -48,6 +48,7 @@ public function rules()
 {
   $rules = parent::relus();
   $rules+=[свои правила];
+  return $rules;
 }
 ```
 получим валидацию по параметрам properties.code
