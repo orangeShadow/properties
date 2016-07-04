@@ -9,7 +9,7 @@
 
 * Шаг 3: Создаем, (предполагается, что модель Page у нас есть)
 ```
-$property = melyfaro\CustomModelProperties\Model\Property::create(
+$property = orangeShadow\CustomModelProperties\Model\Property::create(
 				[
 					"model"=>"Page",
 					"code"=>"VIEWS",
@@ -23,7 +23,7 @@ $property = melyfaro\CustomModelProperties\Model\Property::create(
 		);
 ```
 * Шаг 4: Добавялем к Моделе Page Trait
-`use \melyfaro\CustomModelProperties\TraitProperty;`
+`use orangeShadow\CustomModelProperties\TraitProperty;`
 
 * Шаг 5: Можем задать по коду свойство или получить его 
 ```
@@ -42,7 +42,7 @@ $page->getPropertyValueByCode('VIEWS');
 >Получить весь список значений свойств текущей модели
 `getPropertiesValue`
 
-Если наследоваться от melyfaro\CustomModelProperties\Http\Requests 
+Если наследоваться от orangeShadow\CustomModelProperties\Http\Requests 
 ```
 public function rules()
 {
